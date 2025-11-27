@@ -1,9 +1,7 @@
-NAMA_MAHASISWA = "Budi Perkasa"
-nim = "123456789"
-angkatan = 2024
+import os, sys
+import string
+import math
+import streamlit as 
 
-print("--- Profil Mahasiswa ---")
-print("Nama:", NAMA_MAHASISWA)
-print("NIM:", nim)
-print("Angkatan:", angkatan)
-print("Selamat datang di dunia koding!")
+print(sys.copyright )  
+print(math.sqrt(100))

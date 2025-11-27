@@ -1,8 +1,3 @@
-# Program Kalkulator Sederhana
-
-# Input
-angka1 = float(input("Masukkan angka 1 : "))
-angka2 = float(input("Masukkan angka 2 : "))
 
 print("\nPilih operator:")
 print("+  = Tambah")
@@ -13,7 +8,10 @@ print("** = Pangkat")
 
 operator = input("Masukkan operator yang dipilih : ")
 
-# Proses dan Output
+angka1 = float(input("Masukkan angka 1 : "))
+angka2 = float(input("Masukkan angka 2 : "))
+
+
 if operator == '+':
     hasil = angka1 + angka2
     keterangan = "tambah"
@@ -37,4 +35,4 @@ print("\nOutput Program :")
 print("Angka pertama :", angka1)
 print("Angka kedua :", angka2)
 print("Pilihan Operator :", keterangan)
-print(f"Hasil operator {angka1} {operator} {angka2} = {hasil}")
+print(f"Hasil operator {angka1} {operator} {angka2} = {hasil} ")
