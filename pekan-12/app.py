@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_option_menu import option_menu 
+# from streamlit_option_menu import option_menug
 
 
 st.set_page_config(page_title="Bangun Datar", page_icon="🎶")
@@ -16,14 +16,16 @@ def segitiga(alas, tinggi):
 def lingkaran(jari2):
     return 3.14 * jari2 * jari2
 
-with st.sidebar:
-    menu = option_menu(
-        "Menu",
-        ["Luas Persegi", "Luas segitiga", "Luas lingkaran"],
-        icons=["square", "triangle", "circle"],
-        menu_icon="list",
-        default_index=0,
-    )   
+# with st.sidebar:
+#     menu = option_menu(
+#         "Menu",
+#         ["Luas Persegi", "Luas segitiga", "Luas lingkaran"],
+#         icons=["square", "triangle", "circle"],
+#         menu_icon="list",
+#         default_index=0,
+#     )   
+
+menu = st.sidebar.selectbox('Menu', ['Luas Persegi', 'Luas segitiga', 'Luas lingkaran'])
 
 if menu == "Luas Persegi":
     st.header("Luas Persegi")
